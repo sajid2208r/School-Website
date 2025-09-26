@@ -1,115 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your School Website Template">
-    <title>Benchmark International School</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; }
-        header { background-color: #003366; color: white; padding: 20px; text-align: center; }
-        nav { background-color: #002244; }
-        nav ul { list-style: none; margin:0; padding:0; display:flex; justify-content:center; flex-wrap:wrap; }
-        nav ul li { margin:0 10px; }
-        nav ul li a { color:white; text-decoration:none; padding:10px 15px; display:block; }
-        nav ul li a:hover { background-color: #001122; border-radius:4px; }
-        section { padding:60px 20px; }
-        .section-title { text-align:center; margin-bottom:40px; }
-        .noticeboard, .clubs, .gallery, .teachers { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
-        .notice, .club, .teacher, .gallery img { width:200px; border-radius:8px; }
-        footer { background-color:#001122; color:white; text-align:center; padding:20px 0; }
-        @media(max-width:600px){ nav ul { flex-direction:column; } .noticeboard,.clubs,.gallery,.teachers { flex-direction:column; align-items:center; } }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benchmark International School</title>
+  <style>
+    body {margin:0; font-family: Arial, sans-serif; line-height:1.6;}
+    header {background:#003366; color:#fff; padding:10px 20px;}
+    header h1 {margin:0;}
+    nav ul {list-style:none; padding:0; display:flex; margin:0;}
+    nav ul li {margin:0 15px;}
+    nav ul li a {color:#fff; text-decoration:none; font-weight:bold;}
+    .hero {background:#e0f0ff; padding:40px; text-align:center;}
+    .section {padding:40px 20px;}
+    .section h2 {color:#003366; margin-bottom:20px;}
+    .card {background:#f9f9f9; padding:20px; margin:15px 0; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    footer {background:#003366; color:#fff; text-align:center; padding:20px; margin-top:20px;}
+    .grid {display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+    a.btn {display:inline-block; padding:10px 15px; background:#003366; color:#fff; border-radius:5px; text-decoration:none;}
+    .notice, .event {background:#f1f8ff; padding:20px; border-left:5px solid #003366; margin-bottom:20px;}
+  </style>
 </head>
 <body>
-
-<header>
-    <h1>Your School Name</h1>
-    <p>Welcome to our School Website</p>
-</header>
-
-<nav>
-    <ul>
+  <header>
+    <h1>Benchmark International School</h1>
+    <p>Auchpara Campus: 01896-175005, 01896-175013 | Dattapara Campus: 01896-175006, 01896-175002/5</p>
+    <nav>
+      <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#notice">Noticeboard</a></li>
-        <li><a href="#clubs">Clubs</a></li>
-        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#campus">Campus</a></li>
         <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>  <section class="hero" id="home">
+    <h2>Welcome to Benchmark International School</h2>
+    <p>“Pursuit of Excellence in Education”</p>
+  </section>  <section class="section" id="chairman">
+    <h2>Message from Leadership</h2>
+    <div class="card"><strong>Chairman - Md. Zillur Rahman</strong><br> “Education is the most powerful weapon, which you can use to change the world.”</div>
+    <div class="card"><strong>CEO - Md. Kamruzzaman Jhontu</strong><br> My dream institution - Benchmark International School.</div>
+    <div class="card"><strong>Principal - Md. Jahirul Islam</strong><br> M.A (English), M.A (ELT), B.Ed., Cambridge CELTA Certified ESL & IELTS Trainer.</div>
+    <div class="card"><strong>Vice Principal - Sheikh Shamim Ashraf</strong><br> B.A (Hon’s) in English, M.A in ELT (EWU).</div>
+  </section>  <section class="section" id="about">
+    <h2>About Benchmark International School</h2>
+    <p>Benchmark International School came into existence in 2022 with the motto 'Pursuit of Excellence in Education'. Founded by Chairman Mr. Zillur Rahman and CEO Mr. Kamruzzaman Jhontu with a team of experienced faculty members, the school is committed to providing global standard education that is affordable and effective.</p>
+  </section>  <section class="section" id="faculty">
+    <h2>Faculty Members</h2>
+    <div class="card"><strong>Head of Admin & HR</strong> - Amanullah</div>
+  </section>  <section class="section">
+    <h2>Notice Board</h2>
+    <div class="notice">Play group exam schedule</div>
+    <div class="notice">Class 1 result publish</div>
+    <div class="notice">Public holiday</div>
+    <div class="notice">This month absent list</div>
+    <div class="notice">Teacher of the month</div>
+    <div class="notice">Student of the month</div>
+  </section>  <section class="section">
+    <h2>Events</h2>
+    <div class="event">Cultural program 2022</div>
+    <div class="event">Spelling Bee participant 2022</div>
+    <div class="event">Other activities</div>
+    <div class="event">Picnic program</div>
+  </section>  <section class="section" id="links">
+    <h2>Important Links</h2>
+    <ul>
+      <li><a href="http://www.bfa.gov.bd/www.forms.gov.bd">বাংলাদেশ ফরম</a></li>
+      <li><a href="http://www.moi.gov.bd/">তথ্য মন্ত্রণালয়</a></li>
+      <li><a href="http://www.cabinet.gov.bd/">মন্ত্রিপরিষদ বিভাগ</a></li>
+      <li><a href="http://www.pmo.gov.bd/">প্রধানমন্ত্রীর দপ্তর</a></li>
+      <li><a href="http://www.bangabhaban.gov.bd/index.php">রাষ্ট্রপতির দপ্তর</a></li>
     </ul>
-</nav>
-
-<section id="home">
-    <div class="section-title">
-        <h2>Welcome to Your School</h2>
-        <p>Providing quality education and all-round development.</p>
-    </div>
-</section>
-
-<section id="about">
-    <div class="section-title">
-        <h2>About Us</h2>
-        <p>Our school was established in [Year]. We focus on academic excellence, sports, arts, and character building.</p>
-    </div>
-</section>
-
-<section id="notice">
-    <div class="section-title">
-        <h2>Noticeboard</h2>
-    </div>
-    <div class="noticeboard">
-        <div class="notice"><p>Admission Open for 2025</p></div>
-        <div class="notice"><p>Annual Sports Day on 10th Dec</p></div>
-        <div class="notice"><p>Parent-Teacher Meeting on 15th Oct</p></div>
-    </div>
-</section>
-
-<section id="clubs">
-    <div class="section-title">
-        <h2>Clubs</h2>
-    </div>
-    <div class="clubs">
-        <div class="club"><p>IT Club</p></div>
-        <div class="club"><p>Math Club</p></div>
-        <div class="club"><p>Science Club</p></div>
-    </div>
-</section>
-
-<section id="teachers">
-    <div class="section-title">
-        <h2>Our Teachers</h2>
-    </div>
-    <div class="teachers">
-        <div class="teacher"><p>Mr. John Doe</p></div>
-        <div class="teacher"><p>Ms. Jane Smith</p></div>
-    </div>
-</section>
-
-<section id="gallery">
-    <div class="section-title">
-        <h2>Gallery</h2>
-    </div>
-    <div class="gallery">
-        <img src="school1.jpg" alt="School Image 1">
-        <img src="school2.jpg" alt="School Image 2">
-        <img src="school3.jpg" alt="School Image 3">
-    </div>
-</section>
-
-<section id="contact">
-    <div class="section-title">
-        <h2>Contact Us</h2>
-        <p>Address: 123 School Street, Your City, Country</p>
-        <p>Phone: +880 123456789</p>
-        <p>Email: info@yourschool.com</p>
-        <p>Facebook: <a href="https://facebook.com/yourschool" target="_blank">facebook.com/yourschool</a></p>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2025 Your School Name. All rights reserved.</p>
-</footer>
-
+  </section>  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Emergency Contact:</strong> 0100 00 00 00</p>
+    <p><strong>Email:</strong> info@gmail.com</p>
+  </section>  <footer>
+    <p>© Copyright 2015 by Benchmark International School. All Rights Reserved.</p>
+    <p>Design & Developed by Info Sys BD</p>
+  </footer>
 </body>
 </html>
