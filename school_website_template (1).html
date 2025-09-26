@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your School Website Template">
+    <title>Your School Name</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; }
+        header { background-color: #003366; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #002244; }
+        nav ul { list-style: none; margin:0; padding:0; display:flex; justify-content:center; flex-wrap:wrap; }
+        nav ul li { margin:0 10px; }
+        nav ul li a { color:white; text-decoration:none; padding:10px 15px; display:block; }
+        nav ul li a:hover { background-color: #001122; border-radius:4px; }
+        section { padding:60px 20px; }
+        .section-title { text-align:center; margin-bottom:40px; }
+        .noticeboard, .clubs, .gallery, .teachers { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+        .notice, .club, .teacher, .gallery img { width:200px; border-radius:8px; }
+        footer { background-color:#001122; color:white; text-align:center; padding:20px 0; }
+        @media(max-width:600px){ nav ul { flex-direction:column; } .noticeboard,.clubs,.gallery,.teachers { flex-direction:column; align-items:center; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your School Name</h1>
+    <p>Welcome to our School Website</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#notice">Noticeboard</a></li>
+        <li><a href="#clubs">Clubs</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <div class="section-title">
+        <h2>Welcome to Your School</h2>
+        <p>Providing quality education and all-round development.</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-title">
+        <h2>About Us</h2>
+        <p>Our school was established in [Year]. We focus on academic excellence, sports, arts, and character building.</p>
+    </div>
+</section>
+
+<section id="notice">
+    <div class="section-title">
+        <h2>Noticeboard</h2>
+    </div>
+    <div class="noticeboard">
+        <div class="notice"><p>Admission Open for 2025</p></div>
+        <div class="notice"><p>Annual Sports Day on 10th Dec</p></div>
+        <div class="notice"><p>Parent-Teacher Meeting on 15th Oct</p></div>
+    </div>
+</section>
+
+<section id="clubs">
+    <div class="section-title">
+        <h2>Clubs</h2>
+    </div>
+    <div class="clubs">
+        <div class="club"><p>IT Club</p></div>
+        <div class="club"><p>Math Club</p></div>
+        <div class="club"><p>Science Club</p></div>
+    </div>
+</section>
+
+<section id="teachers">
+    <div class="section-title">
+        <h2>Our Teachers</h2>
+    </div>
+    <div class="teachers">
+        <div class="teacher"><p>Mr. John Doe</p></div>
+        <div class="teacher"><p>Ms. Jane Smith</p></div>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="section-title">
+        <h2>Gallery</h2>
+    </div>
+    <div class="gallery">
+        <img src="school1.jpg" alt="School Image 1">
+        <img src="school2.jpg" alt="School Image 2">
+        <img src="school3.jpg" alt="School Image 3">
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Address: 123 School Street, Your City, Country</p>
+        <p>Phone: +880 123456789</p>
+        <p>Email: info@yourschool.com</p>
+        <p>Facebook: <a href="https://facebook.com/yourschool" target="_blank">facebook.com/yourschool</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your School Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
